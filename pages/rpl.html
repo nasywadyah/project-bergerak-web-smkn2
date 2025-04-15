@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile SMKN 2 Bangkalan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="bg-white shadow-md py-3 w-full">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-6">
+          <!-- Logo & Nama Sekolah -->
+          <div class="flex items-center space-x-3">
+            <img src="../assets/Logo Smk 2.jpg" alt="Logo SMKN 2 Bangkalan" class="w-10 h-10 sm:w-12 sm:h-12 object-cover" />
+            <span class="text-xl font-bold text-gray-800">SMKN 2 Bangkalan</span>
+          </div>
+
+          <!-- Menu Hamburger -->
+          <button id="menu-toggle" class="sm:hidden text-gray-800 focus:outline-none" aria-label="Toggle Menu">☰</button>
+
+          <!-- Menu Navigasi -->
+          <ul id="menu" class="hidden sm:flex space-x-8">
+            <li><a href="../index.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Beranda</a></li>
+            <li><a href="profile.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Profile</a></li>
+            <li><a href="prestasi.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Prestasi</a></li>
+            <li><a href="fasilitas.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Fasilitas</a></li>
+            <li><a href="jurusan.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Jurusan</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu Navigasi untuk Mobile -->
+        <ul id="mobile-menu" class="hidden sm:hidden flex flex-col space-y-2 mt-2 px-6">
+          <li><a href="../index.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Beranda</a></li>
+          <li><a href="profile.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Profile</a></li>
+          <li><a href="prestasi.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Prestasi</a></li>
+          <li><a href="fasilitas.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Fasilitas</a></li>
+          <li><a href="jurusan.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Jurusan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="bg-gray-100 flex justify-center items-center min-h-screen p-6">
+      <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row max-w-4xl">
+        <!-- Gambar -->
+        <div class="md:w-1/2">
+          <img src="../assets/RPL.jpg" alt="Rekayasa Perangkat Lunak" class="w-full h-full rounded-lg shadow-md" />
+        </div>
+
+        <!-- Konten Teks -->
+        <div class="md:w-1/2 md:pl-6 flex flex-col justify-center">
+          <h2 class="text-2xl font-bold text-gray-900">Rekayasa Perangkat Lunak</h2>
+          <p class="text-gray-700 mt-2">Ayo belajar membuat website, aplikasi, bahkan sebuah game dengan masuk di jurusan Rekayasa Perangkat Lunak. Jadilah seorang Software Developer yang handal.</p>
+        </div>
+        <div class="md:w-1/2 md:pl-6 flex flex-col justify-center">
+          <h2 class="mt-4 text-gray-800 font-bold text-2xl">Informasi Konsentrasi Keahlian RPL</h2>
+          <p class="text-gray-700 mt-2">
+            Jurusan Pengembangan Perangkat Lunak dan Gim merupakan jurusan baru di SMK Negeri 2 Bangkalan yang berfokus pada pengembangan teknologi terkini khususnya bidang Industri perangkat lunak seperti website, aplikasi, dan Gim.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script untuk Toggle Menu -->
+    <script>
+      document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

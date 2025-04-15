@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile SMKN 2 Bangkalan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="bg-white shadow-md py-3 w-full">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-6">
+          <!-- Logo & Nama Sekolah -->
+          <div class="flex items-center space-x-3">
+            <img src="../assets/Logo Smk 2.jpg" alt="Logo SMKN 2 Bangkalan" class="w-10 h-10 sm:w-12 sm:h-12 object-cover" />
+            <span class="text-xl font-bold text-gray-800">SMKN 2 Bangkalan</span>
+          </div>
+
+          <!-- Menu Hamburger -->
+          <button id="menu-toggle" class="sm:hidden text-gray-800 focus:outline-none" aria-label="Toggle Menu">☰</button>
+
+          <!-- Menu Navigasi -->
+          <ul id="menu" class="hidden sm:flex space-x-8">
+            <li><a href="../index.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Beranda</a></li>
+            <li><a href="profile.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Profile</a></li>
+            <li><a href="prestasi.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Prestasi</a></li>
+            <li><a href="fasilitas.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Fasilitas</a></li>
+            <li><a href="jurusan.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Jurusan</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu Navigasi untuk Mobile -->
+        <ul id="mobile-menu" class="hidden sm:hidden flex flex-col space-y-2 mt-2 px-6">
+          <li><a href="../index.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Beranda</a></li>
+          <li><a href="profile.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Profile</a></li>
+          <li><a href="prestasi.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Prestasi</a></li>
+          <li><a href="fasilitas.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Fasilitas</a></li>
+          <li><a href="jurusan.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Jurusan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container mx-auto px-4 py-20">
+      <div class="text-center mb-10">
+        <h2 class="text-red-600 font-semibold uppercase">SMK Negeri 2 Bangkalan</h2>
+        <h1 class="text-4xl font-bold text-gray-800">Fasilitas Sekolah</h1>
+        <p class="text-gray-600 mt-5 max-w-2xl mx-auto">Sekolah kami dilengkapi dengan Fasilitas yang menunjang kegiatan pembelajaran indoor maupun outdoor yang dapat diakses dengan mudah oleh siswa.</p>
+      </div>
+
+      <div class="container mx-auto px-10 md:px-10 lg:px-40">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mt-10 px-10">
+          <!-- Card RPL -->
+          <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:bg-red-700">
+            <img src="https://smkn2-bangkalan.sch.id/wp-content/uploads/elementor/thumbs/Parkir-Siswa-ppnar8srxbfamemdq75ixugoihmp9e6mvvm469gyw0.jpeg" alt="Parkiran Siswa" class="w-full h-48 object-cover rounded-md" />
+            <h2 class="text-lg font-semibold mt-3">Parkiran Siswa</h2>
+          </div>
+
+          <!-- Card TKJ -->
+          <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:bg-red-700">
+            <img src="https://smkn2-bangkalan.sch.id/wp-content/uploads/elementor/thumbs/Aula-Sekolah-ppnaros15i163rz64w26m8fim1fxw8y2m2pdbyt9y8.jpeg" alt="Aula Bawah" class="w-full h-48 object-cover rounded-md" />
+            <h2 class="text-lg font-semibold mt-3">Aula Sekolah</h2>
+          </div>
+
+          <!-- Card TITL -->
+          <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:bg-red-700">
+            <img src="https://smkn2-bangkalan.sch.id/wp-content/uploads/elementor/thumbs/Bengkel-Resmi-Honda-ppnary6f1ue1bvlim04gb624jw5m17zdzd884qfc80.jpeg" alt="Bengkel Resmi Honda" class="w-full h-48 object-cover rounded-md" />
+            <h2 class="text-lg font-semibold mt-3">Bengkel Resmi Honda</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script untuk Toggle Menu -->
+    <script>
+      document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

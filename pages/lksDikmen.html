@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile SMKN 2 Bangkalan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="bg-white shadow-md py-3 w-full">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-6">
+          <!-- Logo & Nama Sekolah -->
+          <div class="flex items-center space-x-3">
+            <img src="../assets/Logo Smk 2.jpg" alt="Logo SMKN 2 Bangkalan" class="w-10 h-10 sm:w-12 sm:h-12 object-cover" />
+            <span class="text-xl font-bold text-gray-800">SMKN 2 Bangkalan</span>
+          </div>
+
+          <!-- Menu Hamburger -->
+          <button id="menu-toggle" class="sm:hidden text-gray-800 focus:outline-none" aria-label="Toggle Menu">☰</button>
+
+          <!-- Menu Navigasi -->
+          <ul id="menu" class="hidden sm:flex space-x-8">
+            <li><a href="../index.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Beranda</a></li>
+            <li><a href="profile.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Profile</a></li>
+            <li><a href="prestasi.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Prestasi</a></li>
+            <li><a href="fasilitas.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Fasilitas</a></li>
+            <li><a href="jurusan.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Jurusan</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu Navigasi untuk Mobile -->
+        <ul id="mobile-menu" class="hidden sm:hidden flex flex-col space-y-2 mt-2 px-6">
+          <li><a href="../index.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Beranda</a></li>
+          <li><a href="profile.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Profile</a></li>
+          <li><a href="prestasi.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Prestasi</a></li>
+          <li><a href="fasilitas.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Fasilitas</a></li>
+          <li><a href="jurusan.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Jurusan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Foto Kepala Sekolah -->
+    <figure class="flex flex-col items-center mt-10">
+      <img src="https://smkn2-bangkalan.sch.id/wp-content/uploads/2025/02/Juara-LKS-Dikmen-1024x461.jpg" alt="Kepala Sekolah SMKN 2 Bangkalan" class="justify-center max-w-3xl h-50 object-cover rounded-md shadow-lg" />
+    </figure>
+
+    <!-- Kata katanya -->
+    <div class="items-center justify-between min-h-screen px-40 mt-10">
+      <p class="leading-relaved">
+        Bangkalan, 21 Februari 2025 – SMKN 2 Bangkalan kembali menorehkan prestasi gemilang dalam ajang <strong> Kompetensi Siswa (LKS) Pendidikan Menengah (Dikmen) Tingkat Kabupaten Bangkalan Tahun 2025</strong>. Para siswa berbakat dari
+        berbagai jurusan berhasil meraih juara dalam beberapa kategori lomba yang menguji keterampilan dan keahlian di bidang teknologi informasi dan jaringan.
+      </p>
+
+      <p class="leading-relaved my-4">
+        Dalam kompetisi yang berlangsung ketat ini, <strong> 2 Bangkalan berhasil meraih beberapa gelar juara</strong>, di antaranya: <br />
+        <strong>Juara 1 Bidang Web Technologies </strong> – M. Rifki Adi Setiawan (XII RPL 1) <br />
+        <strong> 1 Bidang IT Network System Administrator</strong> – Yusuf (XII TKJ Axioo) <br />
+        <strong> Juara 1 Bidang Cyber Security</strong> – Gremanda P (XI TKJ Axioo) dan Andika Catur (XI TKJ Axioo) <br />
+        <strong> Juara 3 Bidang Information Network Cabling</strong> – Ardiansyah Maulana (XII TKJ Axioo) <br />
+      </p>
+    </div>
+
+    <!-- Script untuk Toggle Menu -->
+    <script>
+      document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

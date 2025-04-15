@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile SMKN 2 Bangkalan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="bg-white shadow-md py-3 w-full">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-6">
+          <!-- Logo & Nama Sekolah -->
+          <div class="flex items-center space-x-3">
+            <img src="../assets/Logo Smk 2.jpg" alt="Logo SMKN 2 Bangkalan" class="w-10 h-10 sm:w-12 sm:h-12 object-cover" />
+            <span class="text-xl font-bold text-gray-800">SMKN 2 Bangkalan</span>
+          </div>
+
+          <!-- Menu Hamburger -->
+          <button id="menu-toggle" class="sm:hidden text-gray-800 focus:outline-none" aria-label="Toggle Menu">☰</button>
+
+          <!-- Menu Navigasi -->
+          <ul id="menu" class="hidden sm:flex space-x-8">
+            <li><a href="../index.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Beranda</a></li>
+            <li><a href="profile.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Profile</a></li>
+            <li><a href="prestasi.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Prestasi</a></li>
+            <li><a href="fasilitas.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Fasilitas</a></li>
+            <li><a href="jurusan.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Jurusan</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu Navigasi untuk Mobile -->
+        <ul id="mobile-menu" class="hidden sm:hidden flex flex-col space-y-2 mt-2 px-6">
+          <li><a href="../index.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Beranda</a></li>
+          <li><a href="profile.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Profile</a></li>
+          <li><a href="prestasi.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Prestasi</a></li>
+          <li><a href="fasilitas.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Fasilitas</a></li>
+          <li><a href="jurusan.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Jurusan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sambutan Kepala Sekolah -->
+    <section class="max-w-4xl mx-auto mt-8 px-4">
+      <h2 class="text-2xl md:text-3xl text-center font-bold">Sambutan Kepala Sekolah SMKN 2 Bangkalan</h2>
+      <p class="text-gray-700 font-semibold text-center">NUR HAZIZAH, S.PD., M.PD</p>
+
+      <!-- Foto Kepala Sekolah -->
+      <figure class="flex flex-col items-center mt-10">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Kepala Sekolah SMKN 2 Bangkalan"
+          class="justify-center w-48 h-48 object-cover rounded-md shadow-lg"
+        />
+        <figcaption class="mt-3 text-gray-600 italic w-60 justify-center">"Kurang cerdas dapat diperbaiki dengan belajar, Kurang cakap dapat dihilangkan dengan pengalaman. Namun tidak jujur itu sulit diperbaiki"</figcaption>
+      </figure>
+    </section>
+
+    <!-- Sambutan kata-kata -->
+    <div class="items-center justify-between min-h-screen px-10 mt-10">
+      <p class="leading-relaved">
+        Assalamu'alaikum wr.wb. Puji syukur kehadirat Allah SWT, atas rahmat dan hidayahnya sehingga saya mampu menuliskan kata sambutan dalam rangka penerbitan website SMKN 2 Bangkalan sebagai sarana informasi dan komunikasi update sekolah
+        di Dunia Maya. SMKN 2 Bangkalan merupakan adalah Sekolah Menengah Kejuruan yang memiliki kelompok bidang keahlian, diantaranya :
+      </p>
+
+      <!-- List Jurusan (RPL NO 1 wkwk) -->
+      <ul class="list-disc list-inside my-4">
+        <li>Rekayasa Perangkat Lunak (RPL)</li>
+        <li>Teknik Komputer dan Jaringan (TKJ)</li>
+        <li>Teknik Instalasi Tenaga Listrik (TITL)</li>
+        <li>Teknik Elektronika Industri (TEI)</li>
+        <li>Kimia Industri (KI)</li>
+        <li>Desain Pemodelan dan Informasi Bangunan (DPIB)</li>
+        <li>Teknik Pemesinan (TPm)</li>
+        <li>Teknik Kendaraan Ringan (TKR)</li>
+        <li>Teknik Sepeda Motor (TSM)</li>
+      </ul>
+
+      <!--Kata kata part-2  -->
+      <p class="leading-relaved">
+        Keberadaannya didukung oleh dunia usaha dan dunia industri, baik dalam pembelajaran maupun penyerapan lulusannya. Pembelajaran teori dan praktek tidak hanya dilakukan di dalam kelas tetapi dilakukan di dunia industri melalui praktek
+        kerja industri di perusahaan-perusahaan yang relevan. <br />
+        Lulusannya telah tersebar di berbagai perguruan tinggi dan Dunia Usaha/Dunia Industri. Kesempatan untuk melanjutkan studi dan bekerja sangat terbuka luas bagi lulusannya. Jalur PMDK tersedia bagi lulusan yang berprestasi baik
+        Perguruan Tinggi Negeri maupun Swasta. <br />
+        Bagi siswa yang ingin bekerja, Dunia Usaha/Dunia Industri banyak sekali menyerap lulusan dari SMK, dimana kemampuan siswa/siswi SMK sudah di uji coba saat mereka praktek kerja di perusahaan-perusahaan
+      </p>
+
+      <!-- Kata-kata Part 3 -->
+      <p class="leading-relaved mt-4">Kami berharap ada masukan dari pihak pengunjung, guna kemajuan SMKN 2 Bangkalan sendiri. Atas perhatian dan kunjungannya saya ucapkan terima kasih.</p>
+
+      <!-- Kata kata part kesekian -->
+      <pc class="font-semibold mt-4"> Wassalamu'alaikum wr.wb. Bangkalan, 05 April 2021 </pc>
+    </div>
+
+    <!-- Script untuk Toggle Menu -->
+    <script>
+      document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

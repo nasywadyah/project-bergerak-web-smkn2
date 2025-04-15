@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile SMKN 2 Bangkalan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="bg-white shadow-md py-3 w-full">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-6">
+          <!-- Logo & Nama Sekolah -->
+          <div class="flex items-center space-x-3">
+            <img src="../assets/Logo Smk 2.jpg" alt="Logo SMKN 2 Bangkalan" class="w-10 h-10 sm:w-12 sm:h-12 object-cover" />
+            <span class="text-xl font-bold text-gray-800">SMKN 2 Bangkalan</span>
+          </div>
+
+          <!-- Menu Hamburger -->
+          <button id="menu-toggle" class="sm:hidden text-gray-800 focus:outline-none" aria-label="Toggle Menu">☰</button>
+
+          <!-- Menu Navigasi -->
+          <ul id="menu" class="hidden sm:flex space-x-8">
+            <li><a href="../index.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Beranda</a></li>
+            <li><a href="profile.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Profile</a></li>
+            <li><a href="prestasi.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Prestasi</a></li>
+            <li><a href="fasilitas.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Fasilitas</a></li>
+            <li><a href="jurusan.html" class="px-4 py-2 bg-red-600 text-white rounded-full shadow-sm hover:bg-red-700 w-48 h-12">Jurusan</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu Navigasi untuk Mobile -->
+        <ul id="mobile-menu" class="hidden sm:hidden flex flex-col space-y-2 mt-2 px-6">
+          <li><a href="../index.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Beranda</a></li>
+          <li><a href="profile.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Profile</a></li>
+          <li><a href="prestasi.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Prestasi</a></li>
+          <li><a href="fasilitas.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Fasilitas</a></li>
+          <li><a href="jurusan.html" class="block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 w-full">Jurusan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Judul guys -->
+    <section class="max-w-4xl mx-auto mt-8 px-4">
+      <p class="font-bold text-4xl md:text-3xl text-center">Jurusan Yang Tersedia</p>
+      <h2 class="text-xl text-center font-bold text-red-600">SMKN 2 Bangkalan</h2>
+    </section>
+
+    <!-- Grid Layout Responsif  -->
+    <div class="container mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mt-10 px-10">
+        <!-- Card RPL -->
+        <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:bg-red-600">
+          <img src="https://smkn2-bangkalan.sch.id/wp-content/uploads/2022/06/DSCF5400-1024x682.jpg" alt="RPL" class="w-full h-48 object-cover rounded-md" />
+          <a href="rpl.html"><h2 class="text-lg font-semibold mt-3">Rekayasa Perangkat Lunak (RPL)</h2></a>
+        </div>
+
+        <!-- Card TKJ -->
+        <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:bg-red-600">
+          <img src="https://smkn2-bangkalan.sch.id/wp-content/uploads/2022/06/perakitan3-Amirotul-Zuraidha-1024x768.jpg" alt="TKJ" class="w-full h-48 object-cover rounded-md" />
+          <h2 class="text-lg font-semibold mt-3">Teknik Komputer dan Jaringan (TKJ)</h2>
+        </div>
+
+        <!-- Card TITL -->
+        <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:bg-red-600">
+          <img src="https://smkn2-bangkalan.sch.id/wp-content/uploads/2022/06/neon-art-heri-purwantoro-1024x477.jpg" alt="TITL" class="w-full h-48 object-cover rounded-md" />
+          <h2 class="text-lg font-semibold mt-3">Teknik Instalasi Tenaga Listrik (TITL)</h2>
+        </div>
+
+        <!-- Card TKR -->
+        <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:bg-red-600">
+          <img src="https://smkn2-bangkalan.sch.id/wp-content/uploads/2022/06/Mobil-Praktikum-1024x768.jpeg" alt="TKR" class="w-full h-48 object-cover rounded-md" />
+          <h2 class="text-lg font-semibold mt-3">Teknik Kendaraan Ringan (TKR)</h2>
+        </div>
+
+        <!-- Card TSM -->
+        <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:bg-red-600">
+          <img src="https://smkn2-bangkalan.sch.id/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-16.05.35-1024x768.jpeg" alt="TSM" class="w-full h-48 object-cover rounded-md" />
+          <h2 class="text-lg font-semibold mt-3">Teknik Sepeda Motor (TSM)</h2>
+        </div>
+
+        <!-- Card TPM -->
+        <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:bg-red-600">
+          <img src="https://smkn2-bangkalan.sch.id/wp-content/uploads/2022/06/Mesin-Bubut-1024x768.jpg" alt="TPM" class="w-full h-48 object-cover rounded-md" />
+          <h2 class="text-lg font-semibold mt-3">Teknik Pemesinan (TPm)</h2>
+        </div>
+
+        <!-- Card TEI -->
+        <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:bg-red-600">
+          <img src="../assets/TEI.jpg" alt="TEI" class="w-full h-48 object-cover rounded-md" />
+          <h2 class="text-lg font-semibold mt-3">Teknik Elektronika Industri (TEI)</h2>
+        </div>
+
+        <!-- Card KI-->
+        <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:bg-red-600">
+          <img src="https://smkn2-bangkalan.sch.id/wp-content/uploads/2022/06/IMG-20200425-WA0002-Apriliyawati-Widyastuti.jpg" alt="KI" class="w-full h-48 object-cover rounded-md" />
+          <h2 class="text-lg font-semibold mt-3">Kimia Industri (KI)</h2>
+        </div>
+
+        <!-- Card DPIB -->
+        <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:bg-red-600">
+          <img src="https://smkn2-bangkalan.sch.id/wp-content/uploads/2022/06/IMAG1050-iwan-wijaya-1-1024x576.jpg" alt="DPIB" class="w-full h-48 object-cover rounded-md" />
+          <h2 class="text-lg font-semibold mt-3">Desain Pemodelan dan Informasi Bangunan (DPIB)</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script untuk Toggle Menu -->
+    <script>
+      document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
